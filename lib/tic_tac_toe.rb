@@ -18,13 +18,8 @@ WIN_COMBINATIONS = [
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-<<<<<<< HEAD
 def input_to_index(input)
   input.to_i - 1
-=======
-def input_to_index(user_input)
-  user_input.to_i - 1
->>>>>>> 446fe6845b5cd8bd7055baec6072c3d32e9ccfe2
 end
 
 def move(board, index, player_token)
@@ -40,7 +35,6 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-<<<<<<< HEAD
 	  puts "Please enter 1-9:"
 	  input = gets.strip
 	  index = input_to_index(input)
@@ -51,19 +45,6 @@ def turn(board)
 	  else
 	    turn(board)
 	  end
-=======
-	turn_count(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  player_token = current_player(board)
-  if valid_move?(board, index)
-    move(board, index, player_token)
-    display_board(board)
-  else
-    turn(board)
-  end
->>>>>>> 446fe6845b5cd8bd7055baec6072c3d32e9ccfe2
 end
 
 def turn_count(board)
