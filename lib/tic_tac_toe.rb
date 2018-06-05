@@ -92,11 +92,7 @@ def draw?(board)
 end
 
 def over?(board)
-<<<<<<< HEAD
   if draw?(board) || won?(board)
-=======
-  if full?(board) || won?(board)
->>>>>>> 446fe6845b5cd8bd7055baec6072c3d32e9ccfe2
     p "GAME OVER!"
     return true
   end
@@ -116,7 +112,6 @@ def winner(board)
 end
 
 def play(board)
-<<<<<<< HEAD
   until over?(board)
     turn(board)
   end
@@ -126,16 +121,5 @@ def play(board)
   end
   if draw?(board)
     puts "Cat's Game!"
-=======
-  until turn_count(board) == 8
-		turn(board)
-	end
-  if won?(board)
-    winner = winner(board)
-    return "Congratulations #{winner}!"
-  end
-  if draw?(board)
-    return "Cat's game."
->>>>>>> 446fe6845b5cd8bd7055baec6072c3d32e9ccfe2
   end
 end
